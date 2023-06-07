@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Localization;
 using ToolsBazaar.Domain.CustomerAggregate;
+using ToolsBazaar.Domain.OrderAggregate;
 using ToolsBazaar.Domain.ProductAggregate;
 using ToolsBazaar.Persistence;
 
@@ -10,6 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddTransient<IProductRepository, ProductRepository>();
 builder.Services.AddTransient<ICustomerRepository, CustomerRepository>();
+builder.Services.AddTransient<IOrderRepository, OrderRepository>();
 
 builder.Services.AddCors(options => options.AddPolicy(corsPolicyName,
                                                       policy => policy.AllowAnyHeader()

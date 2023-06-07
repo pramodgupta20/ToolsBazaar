@@ -5,6 +5,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import StorefrontIcon from "@mui/icons-material/Storefront";
+import ThemeToggle from './Theme/ThemeToggle';
 
 export function NavMenu() {
   return (
@@ -27,6 +28,7 @@ export function NavMenu() {
         <Button component={Link} to="/all-products" color="inherit">
           All products
         </Button>
+        <ThemeToggle />
       </Toolbar>
     </AppBar>
   );

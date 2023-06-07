@@ -5,7 +5,7 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
-import AppTheme from "./components/AppTheme";
+import AppTheme from "./components/Theme/AppTheme";
 import { Layout } from "./components/Layout";
 
 export default function App() {
